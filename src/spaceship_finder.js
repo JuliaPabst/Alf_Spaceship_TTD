@@ -12,10 +12,6 @@ spaceShipFinder.prototype.find = function (map) {
       }
     }
   }
-
-  if (mapArrays[2][2] === "X") {
-    position = [2, 2];
-  }
-
+  
   return position;
 };

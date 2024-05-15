@@ -8,7 +8,7 @@ describe("Spaceship finder", function () {
   });
 
   it("should return [3, 3] if it is on the last field in a small field", function () {
-    expect(spaceship.find("...\n...\n..X")).toEqual([0, 0]);
+    expect(spaceship.find("...\n...\n..X")).toEqual([2, 2]);
   });
 
   it("should return [0, 2] if it is on the third field in the first row", function () {

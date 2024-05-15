@@ -14,4 +14,8 @@ describe("Spaceship finder", function () {
   it("should return [0, 2] if it is on the third field in the first row", function () {
     expect(spaceship.find("..X\n...\n...")).toEqual([0, 2]);
   });
+
+  it("should return [1, 0] if it is on the first field in the second row", function () {
+    expect(spaceship.find("...\nX..\n...")).toEqual([1, 0]);
+  });
 });

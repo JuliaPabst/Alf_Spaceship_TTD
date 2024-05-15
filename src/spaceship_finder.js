@@ -2,7 +2,6 @@
 function spaceShipFinder(map) {}
 spaceShipFinder.prototype.find = function (map) {
   let position;
-
   let mapArrays = map.split("\n");
 
   for (let i = 0; i < mapArrays.length; i++) {

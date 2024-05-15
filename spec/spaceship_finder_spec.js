@@ -19,7 +19,7 @@ describe("Spaceship finder", function () {
     expect(spaceship.find("...\nX..\n...")).toEqual([1, 0]);
   });
 
-  it("should return 'Spaceship lost forever.'", function () {
+  it("should return 'Spaceship lost forever.' if there is no X", function () {
     expect(spaceship.find("...\n...\n...")).toEqual("Spaceship lost forever.");
   });
 });

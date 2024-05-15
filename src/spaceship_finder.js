@@ -12,6 +12,10 @@ spaceShipFinder.prototype.find = function (map) {
       }
     }
   }
-  
+
+  if (position === undefined) {
+    return "Spaceship lost forever.";
+  }
+
   return position;
 };

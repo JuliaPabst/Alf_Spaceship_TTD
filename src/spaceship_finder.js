@@ -6,8 +6,10 @@ spaceShipFinder.prototype.find = function (map) {
   let mapArrays = map.split("\n");
 
   for (let i = 0; i < mapArrays.length; i++) {
-    if (mapArrays[0][i] == "X") {
-      position = [0, i];
+    for (let j = 0; j < mapArrays[i].length; j++) {
+      if (mapArrays[i][j] === "X") {
+        position = [i, j];
+      }
     }
   }
 

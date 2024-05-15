@@ -22,4 +22,12 @@ describe("Spaceship finder", function () {
   it("should return 'Spaceship lost forever.' if there is no X", function () {
     expect(spaceship.find("...\n...\n...")).toEqual("Spaceship lost forever.");
   });
+
+  it("should return 'Spaceship lost forever.' if there is no X", function () {
+    expect(
+      spaceship.find(
+        "..........\n..........\n..........\n.......X..\n..........\n.........."
+      )
+    ).toEqual([7, 2]);
+  });
 });

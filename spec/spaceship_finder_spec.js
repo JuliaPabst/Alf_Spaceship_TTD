@@ -3,8 +3,8 @@ describe("Spaceship finder", function () {
     spaceship = new spaceShipFinder();
   });
 
-  it("should return [2, 0] if it is on the first field", function () {
-    expect(spaceship.find("X..\n...\n...")).toEqual([2, 0]);
+  it("should return [0, 2] if it is on the first field", function () {
+    expect(spaceship.find("X..\n...\n...")).toEqual([0, 2]);
   });
 
   it("should return [2, 0] if it is on the last field in a small field", function () {
@@ -23,7 +23,7 @@ describe("Spaceship finder", function () {
     expect(spaceship.find("...\n...\n...")).toEqual("Spaceship lost forever.");
   });
 
-  it("should return 'Spaceship lost forever.' if there is no X", function () {
+  it("should return [7, 2] if it is on this field in the big map", function () {
     expect(
       spaceship.find(
         "..........\n..........\n..........\n.......X..\n..........\n.........."

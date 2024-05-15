@@ -18,4 +18,8 @@ describe("Spaceship finder", function () {
   it("should return [1, 0] if it is on the first field in the second row", function () {
     expect(spaceship.find("...\nX..\n...")).toEqual([1, 0]);
   });
+
+  it("should return 'Spaceship lost forever.'", function () {
+    expect(spaceship.find("...\n...\n...")).toEqual("Spaceship lost forever.");
+  });
 });

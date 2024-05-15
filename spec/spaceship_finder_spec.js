@@ -3,7 +3,7 @@ describe("Spaceship finder", function () {
     spaceship = new spaceShipFinder();
   });
 
-  it("should return 0 for an empty string", function () {
-    expect(spaceship.find("")).toEqual(0);
+  it("should return [0, 0] if it is on the first field", function () {
+    expect(spaceship.find("X..\n...\n")).toEqual([0, 0]);
   });
 });
